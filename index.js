@@ -7,34 +7,35 @@ var luhnCheck = function(identifier) {
   var isValid = false;
   var checkDigit = 0;
   var sumOfAllNumbers = 0;
+  var reversedIdentifier = [];
 
   // cache the last digit of the identifier
-  var ccInString = identifier.toString();
-  checkDigit = ccInString.charAt(ccInString.length - 1);
+  var identifierString = identifier.toString();
+  checkDigit = identifierString.charAt(identifierString.length - 1);
   checkDigit = parseInt(checkDigit, 10);
 
-  var ccInArray = ccInString
-    .slice(0, ccInString.length - 1)
+  reversedIdentifier = identifierString
+    .slice(0, identifierString.length - 1)
     .split('')
     .reverse();
 
   // convert every items to number
-  for (var i = 0; i < ccInArray.length; i++) {
-    ccInArray[i] = parseInt(ccInArray[i], 10);
+  for (var i = 0; i < reversedIdentifier.length; i++) {
+    reversedIdentifier[i] = parseInt(reversedIdentifier[i], 10);
   }
 
   var index = 0;
   var digit = 1;
-  for (; index < ccInArray.length; index++, digit++) {
+  for (; index < reversedIdentifier.length; index++, digit++) {
     if (digit % 2 > 0) {
-      ccInArray[index] = ccInArray[index] * 2;
+      reversedIdentifier[index] = reversedIdentifier[index] * 2;
     }
 
-    if (ccInArray[index] > 9) {
-      ccInArray[index] = ccInArray[index] - 9;
+    if (reversedIdentifier[index] > 9) {
+      reversedIdentifier[index] = reversedIdentifier[index] - 9;
     }
 
-    sumOfAllNumbers += ccInArray[index];
+    sumOfAllNumbers += reversedIdentifier[index];
   }
 
   if ((sumOfAllNumbers % 10) + checkDigit === 10) {
