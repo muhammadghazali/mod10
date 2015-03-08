@@ -12,11 +12,11 @@ var luhnCheck = function(identifier) {
   var ccInString = identifier.toString();
   checkDigit = ccInString.charAt(ccInString.length - 1);
   checkDigit = parseInt(checkDigit, 10);
-  ccInString = ccInString.slice(0, ccInString.length - 1);
 
-  // convert to array and reverse it
-  var ccInArray = ccInString.split('');
-  ccInArray = ccInArray.reverse();
+  var ccInArray = ccInString
+    .slice(0, ccInString.length - 1)
+    .split('')
+    .reverse();
 
   // convert every items to number
   for (var i = 0; i < ccInArray.length; i++) {
