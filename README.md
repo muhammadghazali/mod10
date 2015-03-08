@@ -15,9 +15,9 @@ $ npm install --save mod10
 ```js
 var mod10 = require('mod10');
 
-mod10('Rainbow');
+// will return true if the identification number is valid
+mod10(30569309025904);
 ```
-
 
 ## License
 
