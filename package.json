@@ -1,6 +1,6 @@
 {
   "name": "mod10",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Validate identification numbers using Luhn algorithm",
   "homepage": "https://github.com/muhammadghazali/mod10",
   "author": {
