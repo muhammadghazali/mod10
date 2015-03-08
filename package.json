@@ -1,7 +1,7 @@
 {
   "name": "mod10",
   "version": "0.0.0",
-  "description": "A simple checksum formula used to validate a variety of identification numbers",
+  "description": "Validate identification numbers using Luhn algorithm",
   "homepage": "https://github.com/muhammadghazali/mod10",
   "author": {
     "name": "Muhammad Ghazali",

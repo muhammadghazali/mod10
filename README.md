@@ -1,6 +1,6 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-> A simple checksum formula used to validate a variety of identification numbers
+> Validate identification numbers using Luhn algorithm.
 
 
 ## Install
