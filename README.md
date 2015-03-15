@@ -1,7 +1,11 @@
 #  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
-> Validate identification numbers using Luhn algorithm.
+What Luhn algorithm can do for us ?
+> Validate a variety of identification numbers, such as credit card numbers or IMEI numbers.
 
+What Luhn algorithm cannot do for us ?
+
+> Prevent malicious attacks, what Luhn algorightm does is check digits, specifically checking for typos such as missing digits.
 
 ## Install
 
