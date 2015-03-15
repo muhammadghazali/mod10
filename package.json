@@ -18,7 +18,8 @@
     "luhn",
     "modulus 10",
     "mod 10",
-    "checksum"
+    "checksum",
+    "credit card validation"
   ],
   "dependencies": {},
   "devDependencies": {
